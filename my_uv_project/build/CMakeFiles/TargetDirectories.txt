@@ -1,0 +1,11 @@
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles/rebuild_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/basic/CMakeFiles/hello-world.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/basic/CMakeFiles/default-loop.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/basic/CMakeFiles/idle-basic.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/basic/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/basic/CMakeFiles/rebuild_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/file-operation.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/buffers-streams.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/rebuild_cache.dir
