@@ -2,7 +2,7 @@
  * uv_idle_t 类型句柄会在每次 loop 轮询时调用 idle callback，
  * 调用次序在 uv_prepare_t 句柄之前；
  * uv_idle_t 和 uv_prepare_t 的 不同之处在于，
- * uv_idle_t active 时，loop 会使用 timeout = 0 的 poll 方法，
+ * 当循环中有 active 的 uv_idle_t 时，loop 会使用 timeout = 0 的 poll 方法，
  * 而不会阻塞 I/O。
  */
 

@@ -29,5 +29,5 @@ include/tree.h 是个例外，该文件内通过 宏实现了 伸展树 和 红�
 ## 命名风格：
 libuv 所有函数、结构体都采用了统一的前缀 uv_，名称格式为：uv_ + name，name 可以以下划线开头，表示内部成员，例如：
 
-- 公开名称：uv_loop_t = uv_ + loop_t uv_loop_start = uv_ + loop_start
-- 内部名称：uv__io_t = uv_ + _io_t uv__io_poll = uv_ + _io_poll
+- 公开名称：`uv_loop_t = uv_ + loop_t uv_loop_start = uv_ + loop_start`
+- 内部名称：`uv__io_t = uv_ + _io_t uv__io_poll = uv_ + _io_poll`

@@ -10,6 +10,3 @@ target_link_libraries(init-loop uv)
 
 add_executable(default-loop default-loop.cpp)
 target_link_libraries(default-loop uv)
-
-add_executable(idle-basic idle-basic.cpp)
-target_link_libraries(idle-basic uv)
