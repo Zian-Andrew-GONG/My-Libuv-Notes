@@ -29,6 +29,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/UnixPaths.cmake"
   "../APIs/CMakeLists.txt"
+  "../APIs/handles/CMakeLists.txt"
+  "../APIs/reqs/CMakeLists.txt"
   "../CMakeLists.txt"
   "CMakeFiles/3.23.0-rc3/CMakeCCompiler.cmake"
   "CMakeFiles/3.23.0-rc3/CMakeCXXCompiler.cmake"
@@ -46,6 +48,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "APIs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "APIs/handles/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "APIs/reqs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "filesystem/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -54,7 +58,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "APIs/CMakeFiles/init-loop.dir/DependInfo.cmake"
   "APIs/CMakeFiles/default-loop.dir/DependInfo.cmake"
   "APIs/CMakeFiles/idle-basic.dir/DependInfo.cmake"
-  "APIs/CMakeFiles/stop.dir/DependInfo.cmake"
+  "APIs/handles/CMakeFiles/base-handle.dir/DependInfo.cmake"
+  "APIs/handles/CMakeFiles/timer-handle.dir/DependInfo.cmake"
+  "APIs/handles/CMakeFiles/prepare-handle.dir/DependInfo.cmake"
+  "APIs/reqs/CMakeFiles/base-req.dir/DependInfo.cmake"
   "filesystem/CMakeFiles/file-operation.dir/DependInfo.cmake"
   "filesystem/CMakeFiles/buffers-streams.dir/DependInfo.cmake"
   )

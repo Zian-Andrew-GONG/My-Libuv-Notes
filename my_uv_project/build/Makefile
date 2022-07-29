@@ -156,17 +156,56 @@ idle-basic/fast:
 .PHONY : idle-basic/fast
 
 #=============================================================================
-# Target rules for targets named stop
+# Target rules for targets named base-handle
 
 # Build rule for target.
-stop: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stop
-.PHONY : stop
+base-handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 base-handle
+.PHONY : base-handle
 
 # fast build rule for target.
-stop/fast:
-	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/stop.dir/build.make APIs/CMakeFiles/stop.dir/build
-.PHONY : stop/fast
+base-handle/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/base-handle.dir/build.make APIs/handles/CMakeFiles/base-handle.dir/build
+.PHONY : base-handle/fast
+
+#=============================================================================
+# Target rules for targets named timer-handle
+
+# Build rule for target.
+timer-handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 timer-handle
+.PHONY : timer-handle
+
+# fast build rule for target.
+timer-handle/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/timer-handle.dir/build.make APIs/handles/CMakeFiles/timer-handle.dir/build
+.PHONY : timer-handle/fast
+
+#=============================================================================
+# Target rules for targets named prepare-handle
+
+# Build rule for target.
+prepare-handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prepare-handle
+.PHONY : prepare-handle
+
+# fast build rule for target.
+prepare-handle/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/prepare-handle.dir/build.make APIs/handles/CMakeFiles/prepare-handle.dir/build
+.PHONY : prepare-handle/fast
+
+#=============================================================================
+# Target rules for targets named base-req
+
+# Build rule for target.
+base-req: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 base-req
+.PHONY : base-req
+
+# fast build rule for target.
+base-req/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/reqs/CMakeFiles/base-req.dir/build.make APIs/reqs/CMakeFiles/base-req.dir/build
+.PHONY : base-req/fast
 
 #=============================================================================
 # Target rules for targets named file-operation
@@ -202,12 +241,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... base-handle"
+	@echo "... base-req"
 	@echo "... buffers-streams"
 	@echo "... default-loop"
 	@echo "... file-operation"
 	@echo "... idle-basic"
 	@echo "... init-loop"
-	@echo "... stop"
+	@echo "... prepare-handle"
+	@echo "... timer-handle"
 .PHONY : help
 
 

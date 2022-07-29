@@ -3,9 +3,16 @@
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/CMakeFiles/init-loop.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/CMakeFiles/default-loop.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/CMakeFiles/idle-basic.dir
-/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/CMakeFiles/stop.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/CMakeFiles/edit_cache.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/CMakeFiles/rebuild_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/base-handle.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/timer-handle.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/prepare-handle.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/rebuild_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/reqs/CMakeFiles/base-req.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/reqs/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/reqs/CMakeFiles/rebuild_cache.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/file-operation.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/buffers-streams.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/edit_cache.dir

@@ -158,20 +158,6 @@ idle-basic/fast:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/idle-basic.dir/build.make APIs/CMakeFiles/idle-basic.dir/build
 .PHONY : idle-basic/fast
 
-# Convenience name for target.
-APIs/CMakeFiles/stop.dir/rule:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/CMakeFiles/stop.dir/rule
-.PHONY : APIs/CMakeFiles/stop.dir/rule
-
-# Convenience name for target.
-stop: APIs/CMakeFiles/stop.dir/rule
-.PHONY : stop
-
-# fast build rule for target.
-stop/fast:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/stop.dir/build.make APIs/CMakeFiles/stop.dir/build
-.PHONY : stop/fast
-
 default-loop.o: default-loop.cpp.o
 .PHONY : default-loop.o
 
@@ -244,30 +230,6 @@ init-loop.cpp.s:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/init-loop.dir/build.make APIs/CMakeFiles/init-loop.dir/init-loop.cpp.s
 .PHONY : init-loop.cpp.s
 
-stop.o: stop.cpp.o
-.PHONY : stop.o
-
-# target to build an object file
-stop.cpp.o:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/stop.dir/build.make APIs/CMakeFiles/stop.dir/stop.cpp.o
-.PHONY : stop.cpp.o
-
-stop.i: stop.cpp.i
-.PHONY : stop.i
-
-# target to preprocess a source file
-stop.cpp.i:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/stop.dir/build.make APIs/CMakeFiles/stop.dir/stop.cpp.i
-.PHONY : stop.cpp.i
-
-stop.s: stop.cpp.s
-.PHONY : stop.s
-
-# target to generate assembly for a file
-stop.cpp.s:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/stop.dir/build.make APIs/CMakeFiles/stop.dir/stop.cpp.s
-.PHONY : stop.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -279,7 +241,6 @@ help:
 	@echo "... default-loop"
 	@echo "... idle-basic"
 	@echo "... init-loop"
-	@echo "... stop"
 	@echo "... default-loop.o"
 	@echo "... default-loop.i"
 	@echo "... default-loop.s"
@@ -289,9 +250,6 @@ help:
 	@echo "... init-loop.o"
 	@echo "... init-loop.i"
 	@echo "... init-loop.s"
-	@echo "... stop.o"
-	@echo "... stop.i"
-	@echo "... stop.s"
 .PHONY : help
 
 
