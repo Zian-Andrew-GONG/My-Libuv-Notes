@@ -7,5 +7,5 @@ include_directories(/usr/local/include)
 include_directories(/usr/local/include/uv)
 
 
-add_subdirectory(basic)
+add_subdirectory(APIs)
 add_subdirectory(filesystem)

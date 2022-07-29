@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello-world
+# Target rules for targets named init-loop
 
 # Build rule for target.
-hello-world: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello-world
-.PHONY : hello-world
+init-loop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 init-loop
+.PHONY : init-loop
 
 # fast build rule for target.
-hello-world/fast:
-	$(MAKE) $(MAKESILENT) -f basic/CMakeFiles/hello-world.dir/build.make basic/CMakeFiles/hello-world.dir/build
-.PHONY : hello-world/fast
+init-loop/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/init-loop.dir/build.make APIs/CMakeFiles/init-loop.dir/build
+.PHONY : init-loop/fast
 
 #=============================================================================
 # Target rules for targets named default-loop
@@ -139,7 +139,7 @@ default-loop: cmake_check_build_system
 
 # fast build rule for target.
 default-loop/fast:
-	$(MAKE) $(MAKESILENT) -f basic/CMakeFiles/default-loop.dir/build.make basic/CMakeFiles/default-loop.dir/build
+	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/default-loop.dir/build.make APIs/CMakeFiles/default-loop.dir/build
 .PHONY : default-loop/fast
 
 #=============================================================================
@@ -152,8 +152,21 @@ idle-basic: cmake_check_build_system
 
 # fast build rule for target.
 idle-basic/fast:
-	$(MAKE) $(MAKESILENT) -f basic/CMakeFiles/idle-basic.dir/build.make basic/CMakeFiles/idle-basic.dir/build
+	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/idle-basic.dir/build.make APIs/CMakeFiles/idle-basic.dir/build
 .PHONY : idle-basic/fast
+
+#=============================================================================
+# Target rules for targets named stop
+
+# Build rule for target.
+stop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stop
+.PHONY : stop
+
+# fast build rule for target.
+stop/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/stop.dir/build.make APIs/CMakeFiles/stop.dir/build
+.PHONY : stop/fast
 
 #=============================================================================
 # Target rules for targets named file-operation
@@ -192,8 +205,9 @@ help:
 	@echo "... buffers-streams"
 	@echo "... default-loop"
 	@echo "... file-operation"
-	@echo "... hello-world"
 	@echo "... idle-basic"
+	@echo "... init-loop"
+	@echo "... stop"
 .PHONY : help
 
 
