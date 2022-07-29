@@ -143,19 +143,6 @@ default-loop/fast:
 .PHONY : default-loop/fast
 
 #=============================================================================
-# Target rules for targets named idle-basic
-
-# Build rule for target.
-idle-basic: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 idle-basic
-.PHONY : idle-basic
-
-# fast build rule for target.
-idle-basic/fast:
-	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/idle-basic.dir/build.make APIs/CMakeFiles/idle-basic.dir/build
-.PHONY : idle-basic/fast
-
-#=============================================================================
 # Target rules for targets named base-handle
 
 # Build rule for target.
@@ -182,17 +169,30 @@ timer-handle/fast:
 .PHONY : timer-handle/fast
 
 #=============================================================================
-# Target rules for targets named prepare-handle
+# Target rules for targets named idle-prepare-check-handle
 
 # Build rule for target.
-prepare-handle: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prepare-handle
-.PHONY : prepare-handle
+idle-prepare-check-handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 idle-prepare-check-handle
+.PHONY : idle-prepare-check-handle
 
 # fast build rule for target.
-prepare-handle/fast:
-	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/prepare-handle.dir/build.make APIs/handles/CMakeFiles/prepare-handle.dir/build
-.PHONY : prepare-handle/fast
+idle-prepare-check-handle/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build
+.PHONY : idle-prepare-check-handle/fast
+
+#=============================================================================
+# Target rules for targets named idle-handle
+
+# Build rule for target.
+idle-handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 idle-handle
+.PHONY : idle-handle
+
+# fast build rule for target.
+idle-handle/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/build
+.PHONY : idle-handle/fast
 
 #=============================================================================
 # Target rules for targets named base-req
@@ -246,9 +246,9 @@ help:
 	@echo "... buffers-streams"
 	@echo "... default-loop"
 	@echo "... file-operation"
-	@echo "... idle-basic"
+	@echo "... idle-handle"
+	@echo "... idle-prepare-check-handle"
 	@echo "... init-loop"
-	@echo "... prepare-handle"
 	@echo "... timer-handle"
 .PHONY : help
 

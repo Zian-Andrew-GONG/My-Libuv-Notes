@@ -144,20 +144,6 @@ default-loop/fast:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/default-loop.dir/build.make APIs/CMakeFiles/default-loop.dir/build
 .PHONY : default-loop/fast
 
-# Convenience name for target.
-APIs/CMakeFiles/idle-basic.dir/rule:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/CMakeFiles/idle-basic.dir/rule
-.PHONY : APIs/CMakeFiles/idle-basic.dir/rule
-
-# Convenience name for target.
-idle-basic: APIs/CMakeFiles/idle-basic.dir/rule
-.PHONY : idle-basic
-
-# fast build rule for target.
-idle-basic/fast:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/idle-basic.dir/build.make APIs/CMakeFiles/idle-basic.dir/build
-.PHONY : idle-basic/fast
-
 default-loop.o: default-loop.cpp.o
 .PHONY : default-loop.o
 
@@ -181,30 +167,6 @@ default-loop.s: default-loop.cpp.s
 default-loop.cpp.s:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/default-loop.dir/build.make APIs/CMakeFiles/default-loop.dir/default-loop.cpp.s
 .PHONY : default-loop.cpp.s
-
-idle-basic.o: idle-basic.cpp.o
-.PHONY : idle-basic.o
-
-# target to build an object file
-idle-basic.cpp.o:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/idle-basic.dir/build.make APIs/CMakeFiles/idle-basic.dir/idle-basic.cpp.o
-.PHONY : idle-basic.cpp.o
-
-idle-basic.i: idle-basic.cpp.i
-.PHONY : idle-basic.i
-
-# target to preprocess a source file
-idle-basic.cpp.i:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/idle-basic.dir/build.make APIs/CMakeFiles/idle-basic.dir/idle-basic.cpp.i
-.PHONY : idle-basic.cpp.i
-
-idle-basic.s: idle-basic.cpp.s
-.PHONY : idle-basic.s
-
-# target to generate assembly for a file
-idle-basic.cpp.s:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/idle-basic.dir/build.make APIs/CMakeFiles/idle-basic.dir/idle-basic.cpp.s
-.PHONY : idle-basic.cpp.s
 
 init-loop.o: init-loop.cpp.o
 .PHONY : init-loop.o
@@ -239,14 +201,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... default-loop"
-	@echo "... idle-basic"
 	@echo "... init-loop"
 	@echo "... default-loop.o"
 	@echo "... default-loop.i"
 	@echo "... default-loop.s"
-	@echo "... idle-basic.o"
-	@echo "... idle-basic.i"
-	@echo "... idle-basic.s"
 	@echo "... init-loop.o"
 	@echo "... init-loop.i"
 	@echo "... init-loop.s"

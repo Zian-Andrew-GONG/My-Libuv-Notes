@@ -145,18 +145,32 @@ timer-handle/fast:
 .PHONY : timer-handle/fast
 
 # Convenience name for target.
-APIs/handles/CMakeFiles/prepare-handle.dir/rule:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/prepare-handle.dir/rule
-.PHONY : APIs/handles/CMakeFiles/prepare-handle.dir/rule
+APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/rule:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/rule
+.PHONY : APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/rule
 
 # Convenience name for target.
-prepare-handle: APIs/handles/CMakeFiles/prepare-handle.dir/rule
-.PHONY : prepare-handle
+idle-prepare-check-handle: APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/rule
+.PHONY : idle-prepare-check-handle
 
 # fast build rule for target.
-prepare-handle/fast:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/prepare-handle.dir/build.make APIs/handles/CMakeFiles/prepare-handle.dir/build
-.PHONY : prepare-handle/fast
+idle-prepare-check-handle/fast:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build
+.PHONY : idle-prepare-check-handle/fast
+
+# Convenience name for target.
+APIs/handles/CMakeFiles/idle-handle.dir/rule:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/idle-handle.dir/rule
+.PHONY : APIs/handles/CMakeFiles/idle-handle.dir/rule
+
+# Convenience name for target.
+idle-handle: APIs/handles/CMakeFiles/idle-handle.dir/rule
+.PHONY : idle-handle
+
+# fast build rule for target.
+idle-handle/fast:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/build
+.PHONY : idle-handle/fast
 
 base-handle.o: base-handle.cpp.o
 .PHONY : base-handle.o
@@ -182,29 +196,53 @@ base-handle.cpp.s:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/base-handle.dir/build.make APIs/handles/CMakeFiles/base-handle.dir/base-handle.cpp.s
 .PHONY : base-handle.cpp.s
 
-prepare-handle.o: prepare-handle.cpp.o
-.PHONY : prepare-handle.o
+idle-handle.o: idle-handle.cpp.o
+.PHONY : idle-handle.o
 
 # target to build an object file
-prepare-handle.cpp.o:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/prepare-handle.dir/build.make APIs/handles/CMakeFiles/prepare-handle.dir/prepare-handle.cpp.o
-.PHONY : prepare-handle.cpp.o
+idle-handle.cpp.o:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/idle-handle.cpp.o
+.PHONY : idle-handle.cpp.o
 
-prepare-handle.i: prepare-handle.cpp.i
-.PHONY : prepare-handle.i
+idle-handle.i: idle-handle.cpp.i
+.PHONY : idle-handle.i
 
 # target to preprocess a source file
-prepare-handle.cpp.i:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/prepare-handle.dir/build.make APIs/handles/CMakeFiles/prepare-handle.dir/prepare-handle.cpp.i
-.PHONY : prepare-handle.cpp.i
+idle-handle.cpp.i:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/idle-handle.cpp.i
+.PHONY : idle-handle.cpp.i
 
-prepare-handle.s: prepare-handle.cpp.s
-.PHONY : prepare-handle.s
+idle-handle.s: idle-handle.cpp.s
+.PHONY : idle-handle.s
 
 # target to generate assembly for a file
-prepare-handle.cpp.s:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/prepare-handle.dir/build.make APIs/handles/CMakeFiles/prepare-handle.dir/prepare-handle.cpp.s
-.PHONY : prepare-handle.cpp.s
+idle-handle.cpp.s:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/idle-handle.cpp.s
+.PHONY : idle-handle.cpp.s
+
+idle-prepare-check-handle.o: idle-prepare-check-handle.cpp.o
+.PHONY : idle-prepare-check-handle.o
+
+# target to build an object file
+idle-prepare-check-handle.cpp.o:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/idle-prepare-check-handle.cpp.o
+.PHONY : idle-prepare-check-handle.cpp.o
+
+idle-prepare-check-handle.i: idle-prepare-check-handle.cpp.i
+.PHONY : idle-prepare-check-handle.i
+
+# target to preprocess a source file
+idle-prepare-check-handle.cpp.i:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/idle-prepare-check-handle.cpp.i
+.PHONY : idle-prepare-check-handle.cpp.i
+
+idle-prepare-check-handle.s: idle-prepare-check-handle.cpp.s
+.PHONY : idle-prepare-check-handle.s
+
+# target to generate assembly for a file
+idle-prepare-check-handle.cpp.s:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/idle-prepare-check-handle.cpp.s
+.PHONY : idle-prepare-check-handle.cpp.s
 
 timer-handle.o: timer-handle.cpp.o
 .PHONY : timer-handle.o
@@ -239,14 +277,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... base-handle"
-	@echo "... prepare-handle"
+	@echo "... idle-handle"
+	@echo "... idle-prepare-check-handle"
 	@echo "... timer-handle"
 	@echo "... base-handle.o"
 	@echo "... base-handle.i"
 	@echo "... base-handle.s"
-	@echo "... prepare-handle.o"
-	@echo "... prepare-handle.i"
-	@echo "... prepare-handle.s"
+	@echo "... idle-handle.o"
+	@echo "... idle-handle.i"
+	@echo "... idle-handle.s"
+	@echo "... idle-prepare-check-handle.o"
+	@echo "... idle-prepare-check-handle.i"
+	@echo "... idle-prepare-check-handle.s"
 	@echo "... timer-handle.o"
 	@echo "... timer-handle.i"
 	@echo "... timer-handle.s"

@@ -57,10 +57,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "APIs/CMakeFiles/init-loop.dir/DependInfo.cmake"
   "APIs/CMakeFiles/default-loop.dir/DependInfo.cmake"
-  "APIs/CMakeFiles/idle-basic.dir/DependInfo.cmake"
   "APIs/handles/CMakeFiles/base-handle.dir/DependInfo.cmake"
   "APIs/handles/CMakeFiles/timer-handle.dir/DependInfo.cmake"
-  "APIs/handles/CMakeFiles/prepare-handle.dir/DependInfo.cmake"
+  "APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/DependInfo.cmake"
+  "APIs/handles/CMakeFiles/idle-handle.dir/DependInfo.cmake"
   "APIs/reqs/CMakeFiles/base-req.dir/DependInfo.cmake"
   "filesystem/CMakeFiles/file-operation.dir/DependInfo.cmake"
   "filesystem/CMakeFiles/buffers-streams.dir/DependInfo.cmake"

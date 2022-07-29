@@ -83,7 +83,6 @@ clean: filesystem/clean
 # Recursive "all" directory target.
 APIs/all: APIs/CMakeFiles/init-loop.dir/all
 APIs/all: APIs/CMakeFiles/default-loop.dir/all
-APIs/all: APIs/CMakeFiles/idle-basic.dir/all
 APIs/all: APIs/handles/all
 APIs/all: APIs/reqs/all
 .PHONY : APIs/all
@@ -96,7 +95,6 @@ APIs/preinstall: APIs/reqs/preinstall
 # Recursive "clean" directory target.
 APIs/clean: APIs/CMakeFiles/init-loop.dir/clean
 APIs/clean: APIs/CMakeFiles/default-loop.dir/clean
-APIs/clean: APIs/CMakeFiles/idle-basic.dir/clean
 APIs/clean: APIs/handles/clean
 APIs/clean: APIs/reqs/clean
 .PHONY : APIs/clean
@@ -107,7 +105,8 @@ APIs/clean: APIs/reqs/clean
 # Recursive "all" directory target.
 APIs/handles/all: APIs/handles/CMakeFiles/base-handle.dir/all
 APIs/handles/all: APIs/handles/CMakeFiles/timer-handle.dir/all
-APIs/handles/all: APIs/handles/CMakeFiles/prepare-handle.dir/all
+APIs/handles/all: APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/all
+APIs/handles/all: APIs/handles/CMakeFiles/idle-handle.dir/all
 .PHONY : APIs/handles/all
 
 # Recursive "preinstall" directory target.
@@ -117,7 +116,8 @@ APIs/handles/preinstall:
 # Recursive "clean" directory target.
 APIs/handles/clean: APIs/handles/CMakeFiles/base-handle.dir/clean
 APIs/handles/clean: APIs/handles/CMakeFiles/timer-handle.dir/clean
-APIs/handles/clean: APIs/handles/CMakeFiles/prepare-handle.dir/clean
+APIs/handles/clean: APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/clean
+APIs/handles/clean: APIs/handles/CMakeFiles/idle-handle.dir/clean
 .PHONY : APIs/handles/clean
 
 #=============================================================================
@@ -159,7 +159,7 @@ filesystem/clean: filesystem/CMakeFiles/buffers-streams.dir/clean
 APIs/CMakeFiles/init-loop.dir/all:
 	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/init-loop.dir/build.make APIs/CMakeFiles/init-loop.dir/depend
 	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/init-loop.dir/build.make APIs/CMakeFiles/init-loop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=13,14 "Built target init-loop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=15,16 "Built target init-loop"
 .PHONY : APIs/CMakeFiles/init-loop.dir/all
 
 # Build rule for subdir invocation for target.
@@ -203,32 +203,6 @@ default-loop: APIs/CMakeFiles/default-loop.dir/rule
 APIs/CMakeFiles/default-loop.dir/clean:
 	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/default-loop.dir/build.make APIs/CMakeFiles/default-loop.dir/clean
 .PHONY : APIs/CMakeFiles/default-loop.dir/clean
-
-#=============================================================================
-# Target rules for target APIs/CMakeFiles/idle-basic.dir
-
-# All Build rule for target.
-APIs/CMakeFiles/idle-basic.dir/all:
-	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/idle-basic.dir/build.make APIs/CMakeFiles/idle-basic.dir/depend
-	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/idle-basic.dir/build.make APIs/CMakeFiles/idle-basic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=11,12 "Built target idle-basic"
-.PHONY : APIs/CMakeFiles/idle-basic.dir/all
-
-# Build rule for subdir invocation for target.
-APIs/CMakeFiles/idle-basic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/CMakeFiles/idle-basic.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 0
-.PHONY : APIs/CMakeFiles/idle-basic.dir/rule
-
-# Convenience name for target.
-idle-basic: APIs/CMakeFiles/idle-basic.dir/rule
-.PHONY : idle-basic
-
-# clean rule for target.
-APIs/CMakeFiles/idle-basic.dir/clean:
-	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/idle-basic.dir/build.make APIs/CMakeFiles/idle-basic.dir/clean
-.PHONY : APIs/CMakeFiles/idle-basic.dir/clean
 
 #=============================================================================
 # Target rules for target APIs/handles/CMakeFiles/base-handle.dir
@@ -283,30 +257,56 @@ APIs/handles/CMakeFiles/timer-handle.dir/clean:
 .PHONY : APIs/handles/CMakeFiles/timer-handle.dir/clean
 
 #=============================================================================
-# Target rules for target APIs/handles/CMakeFiles/prepare-handle.dir
+# Target rules for target APIs/handles/CMakeFiles/idle-prepare-check-handle.dir
 
 # All Build rule for target.
-APIs/handles/CMakeFiles/prepare-handle.dir/all:
-	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/prepare-handle.dir/build.make APIs/handles/CMakeFiles/prepare-handle.dir/depend
-	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/prepare-handle.dir/build.make APIs/handles/CMakeFiles/prepare-handle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=15,16 "Built target prepare-handle"
-.PHONY : APIs/handles/CMakeFiles/prepare-handle.dir/all
+APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/all:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/depend
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=13,14 "Built target idle-prepare-check-handle"
+.PHONY : APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/all
 
 # Build rule for subdir invocation for target.
-APIs/handles/CMakeFiles/prepare-handle.dir/rule: cmake_check_build_system
+APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/prepare-handle.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 0
-.PHONY : APIs/handles/CMakeFiles/prepare-handle.dir/rule
+.PHONY : APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/rule
 
 # Convenience name for target.
-prepare-handle: APIs/handles/CMakeFiles/prepare-handle.dir/rule
-.PHONY : prepare-handle
+idle-prepare-check-handle: APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/rule
+.PHONY : idle-prepare-check-handle
 
 # clean rule for target.
-APIs/handles/CMakeFiles/prepare-handle.dir/clean:
-	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/prepare-handle.dir/build.make APIs/handles/CMakeFiles/prepare-handle.dir/clean
-.PHONY : APIs/handles/CMakeFiles/prepare-handle.dir/clean
+APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/clean
+.PHONY : APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/clean
+
+#=============================================================================
+# Target rules for target APIs/handles/CMakeFiles/idle-handle.dir
+
+# All Build rule for target.
+APIs/handles/CMakeFiles/idle-handle.dir/all:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/depend
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=11,12 "Built target idle-handle"
+.PHONY : APIs/handles/CMakeFiles/idle-handle.dir/all
+
+# Build rule for subdir invocation for target.
+APIs/handles/CMakeFiles/idle-handle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/idle-handle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 0
+.PHONY : APIs/handles/CMakeFiles/idle-handle.dir/rule
+
+# Convenience name for target.
+idle-handle: APIs/handles/CMakeFiles/idle-handle.dir/rule
+.PHONY : idle-handle
+
+# clean rule for target.
+APIs/handles/CMakeFiles/idle-handle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/clean
+.PHONY : APIs/handles/CMakeFiles/idle-handle.dir/clean
 
 #=============================================================================
 # Target rules for target APIs/reqs/CMakeFiles/base-req.dir
