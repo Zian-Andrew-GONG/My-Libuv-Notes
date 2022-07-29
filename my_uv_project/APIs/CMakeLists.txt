@@ -13,3 +13,9 @@ target_link_libraries(idle-basic uv)
 
 add_executable(stop stop.cpp)
 target_link_libraries(stop uv)
+
+add_executable(base-handle base-handle.cpp)
+target_link_libraries(base-handle uv)
+
+add_executable(base-req base-req.cpp)
+target_link_libraries(base-req uv)
