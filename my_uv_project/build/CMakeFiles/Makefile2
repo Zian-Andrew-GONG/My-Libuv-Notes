@@ -107,6 +107,8 @@ APIs/handles/all: APIs/handles/CMakeFiles/base-handle.dir/all
 APIs/handles/all: APIs/handles/CMakeFiles/timer-handle.dir/all
 APIs/handles/all: APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/all
 APIs/handles/all: APIs/handles/CMakeFiles/idle-handle.dir/all
+APIs/handles/all: APIs/handles/CMakeFiles/signal-handle.dir/all
+APIs/handles/all: APIs/handles/CMakeFiles/process-handle.dir/all
 .PHONY : APIs/handles/all
 
 # Recursive "preinstall" directory target.
@@ -118,6 +120,8 @@ APIs/handles/clean: APIs/handles/CMakeFiles/base-handle.dir/clean
 APIs/handles/clean: APIs/handles/CMakeFiles/timer-handle.dir/clean
 APIs/handles/clean: APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/clean
 APIs/handles/clean: APIs/handles/CMakeFiles/idle-handle.dir/clean
+APIs/handles/clean: APIs/handles/CMakeFiles/signal-handle.dir/clean
+APIs/handles/clean: APIs/handles/CMakeFiles/process-handle.dir/clean
 .PHONY : APIs/handles/clean
 
 #=============================================================================
@@ -237,7 +241,7 @@ APIs/handles/CMakeFiles/base-handle.dir/clean:
 APIs/handles/CMakeFiles/timer-handle.dir/all:
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/timer-handle.dir/build.make APIs/handles/CMakeFiles/timer-handle.dir/depend
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/timer-handle.dir/build.make APIs/handles/CMakeFiles/timer-handle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=17,18 "Built target timer-handle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=21,22 "Built target timer-handle"
 .PHONY : APIs/handles/CMakeFiles/timer-handle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -307,6 +311,58 @@ idle-handle: APIs/handles/CMakeFiles/idle-handle.dir/rule
 APIs/handles/CMakeFiles/idle-handle.dir/clean:
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/clean
 .PHONY : APIs/handles/CMakeFiles/idle-handle.dir/clean
+
+#=============================================================================
+# Target rules for target APIs/handles/CMakeFiles/signal-handle.dir
+
+# All Build rule for target.
+APIs/handles/CMakeFiles/signal-handle.dir/all:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/signal-handle.dir/build.make APIs/handles/CMakeFiles/signal-handle.dir/depend
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/signal-handle.dir/build.make APIs/handles/CMakeFiles/signal-handle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=19,20 "Built target signal-handle"
+.PHONY : APIs/handles/CMakeFiles/signal-handle.dir/all
+
+# Build rule for subdir invocation for target.
+APIs/handles/CMakeFiles/signal-handle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/signal-handle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 0
+.PHONY : APIs/handles/CMakeFiles/signal-handle.dir/rule
+
+# Convenience name for target.
+signal-handle: APIs/handles/CMakeFiles/signal-handle.dir/rule
+.PHONY : signal-handle
+
+# clean rule for target.
+APIs/handles/CMakeFiles/signal-handle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/signal-handle.dir/build.make APIs/handles/CMakeFiles/signal-handle.dir/clean
+.PHONY : APIs/handles/CMakeFiles/signal-handle.dir/clean
+
+#=============================================================================
+# Target rules for target APIs/handles/CMakeFiles/process-handle.dir
+
+# All Build rule for target.
+APIs/handles/CMakeFiles/process-handle.dir/all:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/process-handle.dir/build.make APIs/handles/CMakeFiles/process-handle.dir/depend
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/process-handle.dir/build.make APIs/handles/CMakeFiles/process-handle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=17,18 "Built target process-handle"
+.PHONY : APIs/handles/CMakeFiles/process-handle.dir/all
+
+# Build rule for subdir invocation for target.
+APIs/handles/CMakeFiles/process-handle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/process-handle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 0
+.PHONY : APIs/handles/CMakeFiles/process-handle.dir/rule
+
+# Convenience name for target.
+process-handle: APIs/handles/CMakeFiles/process-handle.dir/rule
+.PHONY : process-handle
+
+# clean rule for target.
+APIs/handles/CMakeFiles/process-handle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/process-handle.dir/build.make APIs/handles/CMakeFiles/process-handle.dir/clean
+.PHONY : APIs/handles/CMakeFiles/process-handle.dir/clean
 
 #=============================================================================
 # Target rules for target APIs/reqs/CMakeFiles/base-req.dir

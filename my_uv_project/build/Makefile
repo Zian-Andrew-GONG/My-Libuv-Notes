@@ -195,6 +195,32 @@ idle-handle/fast:
 .PHONY : idle-handle/fast
 
 #=============================================================================
+# Target rules for targets named signal-handle
+
+# Build rule for target.
+signal-handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 signal-handle
+.PHONY : signal-handle
+
+# fast build rule for target.
+signal-handle/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/signal-handle.dir/build.make APIs/handles/CMakeFiles/signal-handle.dir/build
+.PHONY : signal-handle/fast
+
+#=============================================================================
+# Target rules for targets named process-handle
+
+# Build rule for target.
+process-handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 process-handle
+.PHONY : process-handle
+
+# fast build rule for target.
+process-handle/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/process-handle.dir/build.make APIs/handles/CMakeFiles/process-handle.dir/build
+.PHONY : process-handle/fast
+
+#=============================================================================
 # Target rules for targets named base-req
 
 # Build rule for target.
@@ -249,6 +275,8 @@ help:
 	@echo "... idle-handle"
 	@echo "... idle-prepare-check-handle"
 	@echo "... init-loop"
+	@echo "... process-handle"
+	@echo "... signal-handle"
 	@echo "... timer-handle"
 .PHONY : help
 

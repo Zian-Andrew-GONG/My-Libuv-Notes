@@ -28,11 +28,13 @@ void wait_for_a_while(uv_idle_t* handle) {
 }
 
 void check_cb(uv_check_t* check) {
-  printf("wait for checking ...\n");
+  printf("wait for checking ...\n\n");
 }
 
 void prepare_cb(uv_prepare_t* prepare) {
   printf("wait for preparing ...\n");
+  if(counter >= 5) 
+    uv_prepare_stop(prepare);
 }
 
 int main() {

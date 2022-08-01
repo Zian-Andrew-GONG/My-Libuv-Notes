@@ -172,6 +172,34 @@ idle-handle/fast:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/build
 .PHONY : idle-handle/fast
 
+# Convenience name for target.
+APIs/handles/CMakeFiles/signal-handle.dir/rule:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/signal-handle.dir/rule
+.PHONY : APIs/handles/CMakeFiles/signal-handle.dir/rule
+
+# Convenience name for target.
+signal-handle: APIs/handles/CMakeFiles/signal-handle.dir/rule
+.PHONY : signal-handle
+
+# fast build rule for target.
+signal-handle/fast:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/signal-handle.dir/build.make APIs/handles/CMakeFiles/signal-handle.dir/build
+.PHONY : signal-handle/fast
+
+# Convenience name for target.
+APIs/handles/CMakeFiles/process-handle.dir/rule:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/process-handle.dir/rule
+.PHONY : APIs/handles/CMakeFiles/process-handle.dir/rule
+
+# Convenience name for target.
+process-handle: APIs/handles/CMakeFiles/process-handle.dir/rule
+.PHONY : process-handle
+
+# fast build rule for target.
+process-handle/fast:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/process-handle.dir/build.make APIs/handles/CMakeFiles/process-handle.dir/build
+.PHONY : process-handle/fast
+
 base-handle.o: base-handle.cpp.o
 .PHONY : base-handle.o
 
@@ -244,6 +272,54 @@ idle-prepare-check-handle.cpp.s:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/idle-prepare-check-handle.cpp.s
 .PHONY : idle-prepare-check-handle.cpp.s
 
+process-handle.o: process-handle.cpp.o
+.PHONY : process-handle.o
+
+# target to build an object file
+process-handle.cpp.o:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/process-handle.dir/build.make APIs/handles/CMakeFiles/process-handle.dir/process-handle.cpp.o
+.PHONY : process-handle.cpp.o
+
+process-handle.i: process-handle.cpp.i
+.PHONY : process-handle.i
+
+# target to preprocess a source file
+process-handle.cpp.i:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/process-handle.dir/build.make APIs/handles/CMakeFiles/process-handle.dir/process-handle.cpp.i
+.PHONY : process-handle.cpp.i
+
+process-handle.s: process-handle.cpp.s
+.PHONY : process-handle.s
+
+# target to generate assembly for a file
+process-handle.cpp.s:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/process-handle.dir/build.make APIs/handles/CMakeFiles/process-handle.dir/process-handle.cpp.s
+.PHONY : process-handle.cpp.s
+
+signal-handle.o: signal-handle.cpp.o
+.PHONY : signal-handle.o
+
+# target to build an object file
+signal-handle.cpp.o:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/signal-handle.dir/build.make APIs/handles/CMakeFiles/signal-handle.dir/signal-handle.cpp.o
+.PHONY : signal-handle.cpp.o
+
+signal-handle.i: signal-handle.cpp.i
+.PHONY : signal-handle.i
+
+# target to preprocess a source file
+signal-handle.cpp.i:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/signal-handle.dir/build.make APIs/handles/CMakeFiles/signal-handle.dir/signal-handle.cpp.i
+.PHONY : signal-handle.cpp.i
+
+signal-handle.s: signal-handle.cpp.s
+.PHONY : signal-handle.s
+
+# target to generate assembly for a file
+signal-handle.cpp.s:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/signal-handle.dir/build.make APIs/handles/CMakeFiles/signal-handle.dir/signal-handle.cpp.s
+.PHONY : signal-handle.cpp.s
+
 timer-handle.o: timer-handle.cpp.o
 .PHONY : timer-handle.o
 
@@ -279,6 +355,8 @@ help:
 	@echo "... base-handle"
 	@echo "... idle-handle"
 	@echo "... idle-prepare-check-handle"
+	@echo "... process-handle"
+	@echo "... signal-handle"
 	@echo "... timer-handle"
 	@echo "... base-handle.o"
 	@echo "... base-handle.i"
@@ -289,6 +367,12 @@ help:
 	@echo "... idle-prepare-check-handle.o"
 	@echo "... idle-prepare-check-handle.i"
 	@echo "... idle-prepare-check-handle.s"
+	@echo "... process-handle.o"
+	@echo "... process-handle.i"
+	@echo "... process-handle.s"
+	@echo "... signal-handle.o"
+	@echo "... signal-handle.i"
+	@echo "... signal-handle.s"
 	@echo "... timer-handle.o"
 	@echo "... timer-handle.i"
 	@echo "... timer-handle.s"

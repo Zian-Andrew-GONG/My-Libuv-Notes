@@ -61,6 +61,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "APIs/handles/CMakeFiles/timer-handle.dir/DependInfo.cmake"
   "APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/DependInfo.cmake"
   "APIs/handles/CMakeFiles/idle-handle.dir/DependInfo.cmake"
+  "APIs/handles/CMakeFiles/signal-handle.dir/DependInfo.cmake"
+  "APIs/handles/CMakeFiles/process-handle.dir/DependInfo.cmake"
   "APIs/reqs/CMakeFiles/base-req.dir/DependInfo.cmake"
   "filesystem/CMakeFiles/file-operation.dir/DependInfo.cmake"
   "filesystem/CMakeFiles/buffers-streams.dir/DependInfo.cmake"
