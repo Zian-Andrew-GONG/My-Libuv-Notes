@@ -2,7 +2,6 @@
  * uv_tcp_t 相当于 uv_stream_t 的子类
  * 
  * uv_tcp_init() 初始化 tcp handle，但不会生成 socket
- * 
  * uv_tcp_init_ex() 使用 flags 初始化 tcp handle，同时根据 flag 创建 socket
  *   如果 flags = AF_UNSPEC，则等同于 uv_tcp_init()
  * 

@@ -200,6 +200,34 @@ process-handle/fast:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/process-handle.dir/build.make APIs/handles/CMakeFiles/process-handle.dir/build
 .PHONY : process-handle/fast
 
+# Convenience name for target.
+APIs/handles/CMakeFiles/fs-event-handle.dir/rule:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/fs-event-handle.dir/rule
+.PHONY : APIs/handles/CMakeFiles/fs-event-handle.dir/rule
+
+# Convenience name for target.
+fs-event-handle: APIs/handles/CMakeFiles/fs-event-handle.dir/rule
+.PHONY : fs-event-handle
+
+# fast build rule for target.
+fs-event-handle/fast:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-event-handle.dir/build.make APIs/handles/CMakeFiles/fs-event-handle.dir/build
+.PHONY : fs-event-handle/fast
+
+# Convenience name for target.
+APIs/handles/CMakeFiles/fs-poll-handle.dir/rule:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/fs-poll-handle.dir/rule
+.PHONY : APIs/handles/CMakeFiles/fs-poll-handle.dir/rule
+
+# Convenience name for target.
+fs-poll-handle: APIs/handles/CMakeFiles/fs-poll-handle.dir/rule
+.PHONY : fs-poll-handle
+
+# fast build rule for target.
+fs-poll-handle/fast:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-poll-handle.dir/build.make APIs/handles/CMakeFiles/fs-poll-handle.dir/build
+.PHONY : fs-poll-handle/fast
+
 base-handle.o: base-handle.cpp.o
 .PHONY : base-handle.o
 
@@ -223,6 +251,54 @@ base-handle.s: base-handle.cpp.s
 base-handle.cpp.s:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/base-handle.dir/build.make APIs/handles/CMakeFiles/base-handle.dir/base-handle.cpp.s
 .PHONY : base-handle.cpp.s
+
+fs-event-handle.o: fs-event-handle.cpp.o
+.PHONY : fs-event-handle.o
+
+# target to build an object file
+fs-event-handle.cpp.o:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-event-handle.dir/build.make APIs/handles/CMakeFiles/fs-event-handle.dir/fs-event-handle.cpp.o
+.PHONY : fs-event-handle.cpp.o
+
+fs-event-handle.i: fs-event-handle.cpp.i
+.PHONY : fs-event-handle.i
+
+# target to preprocess a source file
+fs-event-handle.cpp.i:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-event-handle.dir/build.make APIs/handles/CMakeFiles/fs-event-handle.dir/fs-event-handle.cpp.i
+.PHONY : fs-event-handle.cpp.i
+
+fs-event-handle.s: fs-event-handle.cpp.s
+.PHONY : fs-event-handle.s
+
+# target to generate assembly for a file
+fs-event-handle.cpp.s:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-event-handle.dir/build.make APIs/handles/CMakeFiles/fs-event-handle.dir/fs-event-handle.cpp.s
+.PHONY : fs-event-handle.cpp.s
+
+fs-poll-handle.o: fs-poll-handle.cpp.o
+.PHONY : fs-poll-handle.o
+
+# target to build an object file
+fs-poll-handle.cpp.o:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-poll-handle.dir/build.make APIs/handles/CMakeFiles/fs-poll-handle.dir/fs-poll-handle.cpp.o
+.PHONY : fs-poll-handle.cpp.o
+
+fs-poll-handle.i: fs-poll-handle.cpp.i
+.PHONY : fs-poll-handle.i
+
+# target to preprocess a source file
+fs-poll-handle.cpp.i:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-poll-handle.dir/build.make APIs/handles/CMakeFiles/fs-poll-handle.dir/fs-poll-handle.cpp.i
+.PHONY : fs-poll-handle.cpp.i
+
+fs-poll-handle.s: fs-poll-handle.cpp.s
+.PHONY : fs-poll-handle.s
+
+# target to generate assembly for a file
+fs-poll-handle.cpp.s:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-poll-handle.dir/build.make APIs/handles/CMakeFiles/fs-poll-handle.dir/fs-poll-handle.cpp.s
+.PHONY : fs-poll-handle.cpp.s
 
 idle-handle.o: idle-handle.cpp.o
 .PHONY : idle-handle.o
@@ -353,6 +429,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... base-handle"
+	@echo "... fs-event-handle"
+	@echo "... fs-poll-handle"
 	@echo "... idle-handle"
 	@echo "... idle-prepare-check-handle"
 	@echo "... process-handle"
@@ -361,6 +439,12 @@ help:
 	@echo "... base-handle.o"
 	@echo "... base-handle.i"
 	@echo "... base-handle.s"
+	@echo "... fs-event-handle.o"
+	@echo "... fs-event-handle.i"
+	@echo "... fs-event-handle.s"
+	@echo "... fs-poll-handle.o"
+	@echo "... fs-poll-handle.i"
+	@echo "... fs-poll-handle.s"
 	@echo "... idle-handle.o"
 	@echo "... idle-handle.i"
 	@echo "... idle-handle.s"

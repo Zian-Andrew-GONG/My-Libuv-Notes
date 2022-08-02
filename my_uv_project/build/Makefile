@@ -221,6 +221,32 @@ process-handle/fast:
 .PHONY : process-handle/fast
 
 #=============================================================================
+# Target rules for targets named fs-event-handle
+
+# Build rule for target.
+fs-event-handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fs-event-handle
+.PHONY : fs-event-handle
+
+# fast build rule for target.
+fs-event-handle/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-event-handle.dir/build.make APIs/handles/CMakeFiles/fs-event-handle.dir/build
+.PHONY : fs-event-handle/fast
+
+#=============================================================================
+# Target rules for targets named fs-poll-handle
+
+# Build rule for target.
+fs-poll-handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fs-poll-handle
+.PHONY : fs-poll-handle
+
+# fast build rule for target.
+fs-poll-handle/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-poll-handle.dir/build.make APIs/handles/CMakeFiles/fs-poll-handle.dir/build
+.PHONY : fs-poll-handle/fast
+
+#=============================================================================
 # Target rules for targets named base-req
 
 # Build rule for target.
@@ -272,6 +298,8 @@ help:
 	@echo "... buffers-streams"
 	@echo "... default-loop"
 	@echo "... file-operation"
+	@echo "... fs-event-handle"
+	@echo "... fs-poll-handle"
 	@echo "... idle-handle"
 	@echo "... idle-prepare-check-handle"
 	@echo "... init-loop"
