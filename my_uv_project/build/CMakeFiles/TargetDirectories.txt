@@ -10,6 +10,7 @@
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/idle-handle.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/signal-handle.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/process-handle.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/pipe-handle.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/fs-event-handle.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/fs-poll-handle.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/handles/CMakeFiles/edit_cache.dir
@@ -18,6 +19,8 @@
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/reqs/CMakeFiles/edit_cache.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/APIs/reqs/CMakeFiles/rebuild_cache.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/file-operation.dir
-/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/buffers-streams.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/edit_cache.dir
 /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/filesystem/CMakeFiles/rebuild_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/Networking/CMakeFiles/tcp-echo-server.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/Networking/CMakeFiles/edit_cache.dir
+/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/Networking/CMakeFiles/rebuild_cache.dir

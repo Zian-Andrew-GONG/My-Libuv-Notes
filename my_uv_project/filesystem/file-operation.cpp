@@ -49,7 +49,7 @@ void on_open(uv_fs_t *req) {
 }
 
 int main() {
-    const char* path = "/Users/gongzian/src/My-Libuv-Notes/my_uv_project/test-file.txt";
+    const char* path = "/Users/gongzian/src/My-Libuv-Notes/my_uv_project/APIs/reqs/requests.txt";
     // O_RDONLY 、 O_WRONLY 、 O_RDWR 、 O_CREAT
     uv_fs_open(uv_default_loop(), &open_req, path, O_RDONLY, 0, on_open);
     uv_run(uv_default_loop(), UV_RUN_DEFAULT);

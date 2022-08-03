@@ -65,16 +65,19 @@ CMAKE_BINARY_DIR = /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build
 # The main recursive "all" target.
 all: APIs/all
 all: filesystem/all
+all: Networking/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: APIs/preinstall
 preinstall: filesystem/preinstall
+preinstall: Networking/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: APIs/clean
 clean: filesystem/clean
+clean: Networking/clean
 .PHONY : clean
 
 #=============================================================================
@@ -109,6 +112,7 @@ APIs/handles/all: APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/all
 APIs/handles/all: APIs/handles/CMakeFiles/idle-handle.dir/all
 APIs/handles/all: APIs/handles/CMakeFiles/signal-handle.dir/all
 APIs/handles/all: APIs/handles/CMakeFiles/process-handle.dir/all
+APIs/handles/all: APIs/handles/CMakeFiles/pipe-handle.dir/all
 APIs/handles/all: APIs/handles/CMakeFiles/fs-event-handle.dir/all
 APIs/handles/all: APIs/handles/CMakeFiles/fs-poll-handle.dir/all
 .PHONY : APIs/handles/all
@@ -124,6 +128,7 @@ APIs/handles/clean: APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/clean
 APIs/handles/clean: APIs/handles/CMakeFiles/idle-handle.dir/clean
 APIs/handles/clean: APIs/handles/CMakeFiles/signal-handle.dir/clean
 APIs/handles/clean: APIs/handles/CMakeFiles/process-handle.dir/clean
+APIs/handles/clean: APIs/handles/CMakeFiles/pipe-handle.dir/clean
 APIs/handles/clean: APIs/handles/CMakeFiles/fs-event-handle.dir/clean
 APIs/handles/clean: APIs/handles/CMakeFiles/fs-poll-handle.dir/clean
 .PHONY : APIs/handles/clean
@@ -144,11 +149,25 @@ APIs/reqs/clean: APIs/reqs/CMakeFiles/base-req.dir/clean
 .PHONY : APIs/reqs/clean
 
 #=============================================================================
+# Directory level rules for directory Networking
+
+# Recursive "all" directory target.
+Networking/all: Networking/CMakeFiles/tcp-echo-server.dir/all
+.PHONY : Networking/all
+
+# Recursive "preinstall" directory target.
+Networking/preinstall:
+.PHONY : Networking/preinstall
+
+# Recursive "clean" directory target.
+Networking/clean: Networking/CMakeFiles/tcp-echo-server.dir/clean
+.PHONY : Networking/clean
+
+#=============================================================================
 # Directory level rules for directory filesystem
 
 # Recursive "all" directory target.
 filesystem/all: filesystem/CMakeFiles/file-operation.dir/all
-filesystem/all: filesystem/CMakeFiles/buffers-streams.dir/all
 .PHONY : filesystem/all
 
 # Recursive "preinstall" directory target.
@@ -157,7 +176,6 @@ filesystem/preinstall:
 
 # Recursive "clean" directory target.
 filesystem/clean: filesystem/CMakeFiles/file-operation.dir/clean
-filesystem/clean: filesystem/CMakeFiles/buffers-streams.dir/clean
 .PHONY : filesystem/clean
 
 #=============================================================================
@@ -167,7 +185,7 @@ filesystem/clean: filesystem/CMakeFiles/buffers-streams.dir/clean
 APIs/CMakeFiles/init-loop.dir/all:
 	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/init-loop.dir/build.make APIs/CMakeFiles/init-loop.dir/depend
 	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/init-loop.dir/build.make APIs/CMakeFiles/init-loop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=19,20 "Built target init-loop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=17,18 "Built target init-loop"
 .PHONY : APIs/CMakeFiles/init-loop.dir/all
 
 # Build rule for subdir invocation for target.
@@ -193,7 +211,7 @@ APIs/CMakeFiles/init-loop.dir/clean:
 APIs/CMakeFiles/default-loop.dir/all:
 	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/default-loop.dir/build.make APIs/CMakeFiles/default-loop.dir/depend
 	$(MAKE) $(MAKESILENT) -f APIs/CMakeFiles/default-loop.dir/build.make APIs/CMakeFiles/default-loop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=7,8 "Built target default-loop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=5,6 "Built target default-loop"
 .PHONY : APIs/CMakeFiles/default-loop.dir/all
 
 # Build rule for subdir invocation for target.
@@ -245,7 +263,7 @@ APIs/handles/CMakeFiles/base-handle.dir/clean:
 APIs/handles/CMakeFiles/timer-handle.dir/all:
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/timer-handle.dir/build.make APIs/handles/CMakeFiles/timer-handle.dir/depend
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/timer-handle.dir/build.make APIs/handles/CMakeFiles/timer-handle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=25,26 "Built target timer-handle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=27,28 "Built target timer-handle"
 .PHONY : APIs/handles/CMakeFiles/timer-handle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -271,7 +289,7 @@ APIs/handles/CMakeFiles/timer-handle.dir/clean:
 APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/all:
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/depend
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=17,18 "Built target idle-prepare-check-handle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=15,16 "Built target idle-prepare-check-handle"
 .PHONY : APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -297,7 +315,7 @@ APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/clean:
 APIs/handles/CMakeFiles/idle-handle.dir/all:
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/depend
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-handle.dir/build.make APIs/handles/CMakeFiles/idle-handle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=15,16 "Built target idle-handle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=13,14 "Built target idle-handle"
 .PHONY : APIs/handles/CMakeFiles/idle-handle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -369,13 +387,39 @@ APIs/handles/CMakeFiles/process-handle.dir/clean:
 .PHONY : APIs/handles/CMakeFiles/process-handle.dir/clean
 
 #=============================================================================
+# Target rules for target APIs/handles/CMakeFiles/pipe-handle.dir
+
+# All Build rule for target.
+APIs/handles/CMakeFiles/pipe-handle.dir/all:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/pipe-handle.dir/build.make APIs/handles/CMakeFiles/pipe-handle.dir/depend
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/pipe-handle.dir/build.make APIs/handles/CMakeFiles/pipe-handle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=19,20 "Built target pipe-handle"
+.PHONY : APIs/handles/CMakeFiles/pipe-handle.dir/all
+
+# Build rule for subdir invocation for target.
+APIs/handles/CMakeFiles/pipe-handle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/pipe-handle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 0
+.PHONY : APIs/handles/CMakeFiles/pipe-handle.dir/rule
+
+# Convenience name for target.
+pipe-handle: APIs/handles/CMakeFiles/pipe-handle.dir/rule
+.PHONY : pipe-handle
+
+# clean rule for target.
+APIs/handles/CMakeFiles/pipe-handle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/pipe-handle.dir/build.make APIs/handles/CMakeFiles/pipe-handle.dir/clean
+.PHONY : APIs/handles/CMakeFiles/pipe-handle.dir/clean
+
+#=============================================================================
 # Target rules for target APIs/handles/CMakeFiles/fs-event-handle.dir
 
 # All Build rule for target.
 APIs/handles/CMakeFiles/fs-event-handle.dir/all:
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-event-handle.dir/build.make APIs/handles/CMakeFiles/fs-event-handle.dir/depend
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-event-handle.dir/build.make APIs/handles/CMakeFiles/fs-event-handle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=11,12 "Built target fs-event-handle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=9,10 "Built target fs-event-handle"
 .PHONY : APIs/handles/CMakeFiles/fs-event-handle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -401,7 +445,7 @@ APIs/handles/CMakeFiles/fs-event-handle.dir/clean:
 APIs/handles/CMakeFiles/fs-poll-handle.dir/all:
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-poll-handle.dir/build.make APIs/handles/CMakeFiles/fs-poll-handle.dir/depend
 	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/fs-poll-handle.dir/build.make APIs/handles/CMakeFiles/fs-poll-handle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=13,14 "Built target fs-poll-handle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=11,12 "Built target fs-poll-handle"
 .PHONY : APIs/handles/CMakeFiles/fs-poll-handle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -453,7 +497,7 @@ APIs/reqs/CMakeFiles/base-req.dir/clean:
 filesystem/CMakeFiles/file-operation.dir/all:
 	$(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/file-operation.dir/build.make filesystem/CMakeFiles/file-operation.dir/depend
 	$(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/file-operation.dir/build.make filesystem/CMakeFiles/file-operation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=9,10 "Built target file-operation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=7,8 "Built target file-operation"
 .PHONY : filesystem/CMakeFiles/file-operation.dir/all
 
 # Build rule for subdir invocation for target.
@@ -473,30 +517,30 @@ filesystem/CMakeFiles/file-operation.dir/clean:
 .PHONY : filesystem/CMakeFiles/file-operation.dir/clean
 
 #=============================================================================
-# Target rules for target filesystem/CMakeFiles/buffers-streams.dir
+# Target rules for target Networking/CMakeFiles/tcp-echo-server.dir
 
 # All Build rule for target.
-filesystem/CMakeFiles/buffers-streams.dir/all:
-	$(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/buffers-streams.dir/build.make filesystem/CMakeFiles/buffers-streams.dir/depend
-	$(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/buffers-streams.dir/build.make filesystem/CMakeFiles/buffers-streams.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=5,6 "Built target buffers-streams"
-.PHONY : filesystem/CMakeFiles/buffers-streams.dir/all
+Networking/CMakeFiles/tcp-echo-server.dir/all:
+	$(MAKE) $(MAKESILENT) -f Networking/CMakeFiles/tcp-echo-server.dir/build.make Networking/CMakeFiles/tcp-echo-server.dir/depend
+	$(MAKE) $(MAKESILENT) -f Networking/CMakeFiles/tcp-echo-server.dir/build.make Networking/CMakeFiles/tcp-echo-server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles --progress-num=25,26 "Built target tcp-echo-server"
+.PHONY : Networking/CMakeFiles/tcp-echo-server.dir/all
 
 # Build rule for subdir invocation for target.
-filesystem/CMakeFiles/buffers-streams.dir/rule: cmake_check_build_system
+Networking/CMakeFiles/tcp-echo-server.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 filesystem/CMakeFiles/buffers-streams.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Networking/CMakeFiles/tcp-echo-server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build/CMakeFiles 0
-.PHONY : filesystem/CMakeFiles/buffers-streams.dir/rule
+.PHONY : Networking/CMakeFiles/tcp-echo-server.dir/rule
 
 # Convenience name for target.
-buffers-streams: filesystem/CMakeFiles/buffers-streams.dir/rule
-.PHONY : buffers-streams
+tcp-echo-server: Networking/CMakeFiles/tcp-echo-server.dir/rule
+.PHONY : tcp-echo-server
 
 # clean rule for target.
-filesystem/CMakeFiles/buffers-streams.dir/clean:
-	$(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/buffers-streams.dir/build.make filesystem/CMakeFiles/buffers-streams.dir/clean
-.PHONY : filesystem/CMakeFiles/buffers-streams.dir/clean
+Networking/CMakeFiles/tcp-echo-server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Networking/CMakeFiles/tcp-echo-server.dir/build.make Networking/CMakeFiles/tcp-echo-server.dir/clean
+.PHONY : Networking/CMakeFiles/tcp-echo-server.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -221,6 +221,19 @@ process-handle/fast:
 .PHONY : process-handle/fast
 
 #=============================================================================
+# Target rules for targets named pipe-handle
+
+# Build rule for target.
+pipe-handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pipe-handle
+.PHONY : pipe-handle
+
+# fast build rule for target.
+pipe-handle/fast:
+	$(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/pipe-handle.dir/build.make APIs/handles/CMakeFiles/pipe-handle.dir/build
+.PHONY : pipe-handle/fast
+
+#=============================================================================
 # Target rules for targets named fs-event-handle
 
 # Build rule for target.
@@ -273,17 +286,17 @@ file-operation/fast:
 .PHONY : file-operation/fast
 
 #=============================================================================
-# Target rules for targets named buffers-streams
+# Target rules for targets named tcp-echo-server
 
 # Build rule for target.
-buffers-streams: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 buffers-streams
-.PHONY : buffers-streams
+tcp-echo-server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tcp-echo-server
+.PHONY : tcp-echo-server
 
 # fast build rule for target.
-buffers-streams/fast:
-	$(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/buffers-streams.dir/build.make filesystem/CMakeFiles/buffers-streams.dir/build
-.PHONY : buffers-streams/fast
+tcp-echo-server/fast:
+	$(MAKE) $(MAKESILENT) -f Networking/CMakeFiles/tcp-echo-server.dir/build.make Networking/CMakeFiles/tcp-echo-server.dir/build
+.PHONY : tcp-echo-server/fast
 
 # Help Target
 help:
@@ -295,7 +308,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... base-handle"
 	@echo "... base-req"
-	@echo "... buffers-streams"
 	@echo "... default-loop"
 	@echo "... file-operation"
 	@echo "... fs-event-handle"
@@ -303,8 +315,10 @@ help:
 	@echo "... idle-handle"
 	@echo "... idle-prepare-check-handle"
 	@echo "... init-loop"
+	@echo "... pipe-handle"
 	@echo "... process-handle"
 	@echo "... signal-handle"
+	@echo "... tcp-echo-server"
 	@echo "... timer-handle"
 .PHONY : help
 

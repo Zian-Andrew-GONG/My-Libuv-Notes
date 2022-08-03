@@ -32,6 +32,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../APIs/handles/CMakeLists.txt"
   "../APIs/reqs/CMakeLists.txt"
   "../CMakeLists.txt"
+  "../Networking/CMakeLists.txt"
   "CMakeFiles/3.23.0-rc3/CMakeCCompiler.cmake"
   "CMakeFiles/3.23.0-rc3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.23.0-rc3/CMakeSystem.cmake"
@@ -51,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "APIs/handles/CMakeFiles/CMakeDirectoryInformation.cmake"
   "APIs/reqs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "filesystem/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Networking/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -63,9 +65,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "APIs/handles/CMakeFiles/idle-handle.dir/DependInfo.cmake"
   "APIs/handles/CMakeFiles/signal-handle.dir/DependInfo.cmake"
   "APIs/handles/CMakeFiles/process-handle.dir/DependInfo.cmake"
+  "APIs/handles/CMakeFiles/pipe-handle.dir/DependInfo.cmake"
   "APIs/handles/CMakeFiles/fs-event-handle.dir/DependInfo.cmake"
   "APIs/handles/CMakeFiles/fs-poll-handle.dir/DependInfo.cmake"
   "APIs/reqs/CMakeFiles/base-req.dir/DependInfo.cmake"
   "filesystem/CMakeFiles/file-operation.dir/DependInfo.cmake"
-  "filesystem/CMakeFiles/buffers-streams.dir/DependInfo.cmake"
+  "Networking/CMakeFiles/tcp-echo-server.dir/DependInfo.cmake"
   )

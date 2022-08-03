@@ -201,6 +201,20 @@ process-handle/fast:
 .PHONY : process-handle/fast
 
 # Convenience name for target.
+APIs/handles/CMakeFiles/pipe-handle.dir/rule:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/pipe-handle.dir/rule
+.PHONY : APIs/handles/CMakeFiles/pipe-handle.dir/rule
+
+# Convenience name for target.
+pipe-handle: APIs/handles/CMakeFiles/pipe-handle.dir/rule
+.PHONY : pipe-handle
+
+# fast build rule for target.
+pipe-handle/fast:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/pipe-handle.dir/build.make APIs/handles/CMakeFiles/pipe-handle.dir/build
+.PHONY : pipe-handle/fast
+
+# Convenience name for target.
 APIs/handles/CMakeFiles/fs-event-handle.dir/rule:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 APIs/handles/CMakeFiles/fs-event-handle.dir/rule
 .PHONY : APIs/handles/CMakeFiles/fs-event-handle.dir/rule
@@ -348,6 +362,30 @@ idle-prepare-check-handle.cpp.s:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/build.make APIs/handles/CMakeFiles/idle-prepare-check-handle.dir/idle-prepare-check-handle.cpp.s
 .PHONY : idle-prepare-check-handle.cpp.s
 
+pipe-handle.o: pipe-handle.cpp.o
+.PHONY : pipe-handle.o
+
+# target to build an object file
+pipe-handle.cpp.o:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/pipe-handle.dir/build.make APIs/handles/CMakeFiles/pipe-handle.dir/pipe-handle.cpp.o
+.PHONY : pipe-handle.cpp.o
+
+pipe-handle.i: pipe-handle.cpp.i
+.PHONY : pipe-handle.i
+
+# target to preprocess a source file
+pipe-handle.cpp.i:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/pipe-handle.dir/build.make APIs/handles/CMakeFiles/pipe-handle.dir/pipe-handle.cpp.i
+.PHONY : pipe-handle.cpp.i
+
+pipe-handle.s: pipe-handle.cpp.s
+.PHONY : pipe-handle.s
+
+# target to generate assembly for a file
+pipe-handle.cpp.s:
+	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f APIs/handles/CMakeFiles/pipe-handle.dir/build.make APIs/handles/CMakeFiles/pipe-handle.dir/pipe-handle.cpp.s
+.PHONY : pipe-handle.cpp.s
+
 process-handle.o: process-handle.cpp.o
 .PHONY : process-handle.o
 
@@ -433,6 +471,7 @@ help:
 	@echo "... fs-poll-handle"
 	@echo "... idle-handle"
 	@echo "... idle-prepare-check-handle"
+	@echo "... pipe-handle"
 	@echo "... process-handle"
 	@echo "... signal-handle"
 	@echo "... timer-handle"
@@ -451,6 +490,9 @@ help:
 	@echo "... idle-prepare-check-handle.o"
 	@echo "... idle-prepare-check-handle.i"
 	@echo "... idle-prepare-check-handle.s"
+	@echo "... pipe-handle.o"
+	@echo "... pipe-handle.i"
+	@echo "... pipe-handle.s"
 	@echo "... process-handle.o"
 	@echo "... process-handle.i"
 	@echo "... process-handle.s"

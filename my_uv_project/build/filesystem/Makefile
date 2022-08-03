@@ -130,44 +130,6 @@ file-operation/fast:
 	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/file-operation.dir/build.make filesystem/CMakeFiles/file-operation.dir/build
 .PHONY : file-operation/fast
 
-# Convenience name for target.
-filesystem/CMakeFiles/buffers-streams.dir/rule:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 filesystem/CMakeFiles/buffers-streams.dir/rule
-.PHONY : filesystem/CMakeFiles/buffers-streams.dir/rule
-
-# Convenience name for target.
-buffers-streams: filesystem/CMakeFiles/buffers-streams.dir/rule
-.PHONY : buffers-streams
-
-# fast build rule for target.
-buffers-streams/fast:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/buffers-streams.dir/build.make filesystem/CMakeFiles/buffers-streams.dir/build
-.PHONY : buffers-streams/fast
-
-buffers-streams.o: buffers-streams.cpp.o
-.PHONY : buffers-streams.o
-
-# target to build an object file
-buffers-streams.cpp.o:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/buffers-streams.dir/build.make filesystem/CMakeFiles/buffers-streams.dir/buffers-streams.cpp.o
-.PHONY : buffers-streams.cpp.o
-
-buffers-streams.i: buffers-streams.cpp.i
-.PHONY : buffers-streams.i
-
-# target to preprocess a source file
-buffers-streams.cpp.i:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/buffers-streams.dir/build.make filesystem/CMakeFiles/buffers-streams.dir/buffers-streams.cpp.i
-.PHONY : buffers-streams.cpp.i
-
-buffers-streams.s: buffers-streams.cpp.s
-.PHONY : buffers-streams.s
-
-# target to generate assembly for a file
-buffers-streams.cpp.s:
-	cd /Users/gongzian/src/My-Libuv-Notes/my_uv_project/build && $(MAKE) $(MAKESILENT) -f filesystem/CMakeFiles/buffers-streams.dir/build.make filesystem/CMakeFiles/buffers-streams.dir/buffers-streams.cpp.s
-.PHONY : buffers-streams.cpp.s
-
 file-operation.o: file-operation.cpp.o
 .PHONY : file-operation.o
 
@@ -200,11 +162,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... buffers-streams"
 	@echo "... file-operation"
-	@echo "... buffers-streams.o"
-	@echo "... buffers-streams.i"
-	@echo "... buffers-streams.s"
 	@echo "... file-operation.o"
 	@echo "... file-operation.i"
 	@echo "... file-operation.s"

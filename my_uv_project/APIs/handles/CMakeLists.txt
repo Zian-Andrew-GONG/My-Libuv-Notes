@@ -20,7 +20,11 @@ target_link_libraries(signal-handle uv)
 add_executable(process-handle process-handle.cpp)
 target_link_libraries(process-handle uv)
 
+add_executable(pipe-handle pipe-handle.cpp)
+target_link_libraries(pipe-handle uv)
+
 add_executable(fs-event-handle fs-event-handle.cpp)
 target_link_libraries(fs-event-handle uv)
+
 add_executable(fs-poll-handle fs-poll-handle.cpp)
 target_link_libraries(fs-poll-handle uv)

@@ -9,3 +9,4 @@ include_directories(/usr/local/include/uv)
 
 add_subdirectory(APIs)
 add_subdirectory(filesystem)
+add_subdirectory(Networking)
