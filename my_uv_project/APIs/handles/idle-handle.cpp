@@ -17,12 +17,32 @@ void wait_for_a_while(uv_idle_t* handle) {
   if (counter >= 10)
     uv_idle_stop(handle);
 }
+void wait_for_a_while_2(uv_idle_t* handle) {
+  counter++;
+  printf("wait for a while 2...\n");
+  if (counter >= 10)
+    uv_idle_stop(handle);
+}
+void wait_for_a_while_3(uv_idle_t* handle) {
+  counter++;
+  printf("wait for a while 3...\n");
+  if (counter >= 10)
+    uv_idle_stop(handle);
+}
 
 int main() {
   uv_idle_t idler;
+  uv_idle_t idler_2;
+  uv_idle_t idler_3;
 
   uv_idle_init(uv_default_loop(), &idler);
   uv_idle_start(&idler, wait_for_a_while);
+
+  uv_idle_init(uv_default_loop(), &idler_2);
+  uv_idle_start(&idler_2, wait_for_a_while_2);
+  
+  uv_idle_init(uv_default_loop(), &idler_3);
+  uv_idle_start(&idler_3, wait_for_a_while_3);
 
   printf("Idling...\n");
   uv_run(uv_default_loop(), UV_RUN_DEFAULT);
